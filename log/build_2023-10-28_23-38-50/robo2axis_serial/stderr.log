@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib/python3.10/site-packages/robo2axis_serial/Teensy_to_ROS2_serial.py", line 19
+    import python3-serial as serial
+                  ^
+SyntaxError: invalid syntax
+

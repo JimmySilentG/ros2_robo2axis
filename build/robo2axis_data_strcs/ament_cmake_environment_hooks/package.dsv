@@ -1,0 +1,4 @@
+source;share/robo2axis_data_strcs/local_setup.bash
+source;share/robo2axis_data_strcs/local_setup.dsv
+source;share/robo2axis_data_strcs/local_setup.sh
+source;share/robo2axis_data_strcs/local_setup.zsh

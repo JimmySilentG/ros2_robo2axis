@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo2axis_data_strcs/msg/EncoderCounts.msg
+// generated code does not contain a copyright notice
+
+
+module robo2axis_data_strcs {
+  module msg {
+    struct EncoderCounts {
+      int32 axis1;
+
+      int32 axis2;
+    };
+  };
+};

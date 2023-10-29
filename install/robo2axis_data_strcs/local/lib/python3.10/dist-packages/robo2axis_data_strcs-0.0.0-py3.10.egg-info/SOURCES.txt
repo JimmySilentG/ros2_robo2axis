@@ -1,0 +1,8 @@
+setup.py
+robo2axis_data_strcs/__init__.py
+robo2axis_data_strcs.egg-info/PKG-INFO
+robo2axis_data_strcs.egg-info/SOURCES.txt
+robo2axis_data_strcs.egg-info/dependency_links.txt
+robo2axis_data_strcs.egg-info/top_level.txt
+robo2axis_data_strcs/msg/__init__.py
+robo2axis_data_strcs/msg/_encoder_counts.py

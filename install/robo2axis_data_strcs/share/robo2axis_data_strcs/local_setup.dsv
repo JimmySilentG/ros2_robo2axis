@@ -1,0 +1,4 @@
+source;share/robo2axis_data_strcs/environment/ament_prefix_path.sh
+source;share/robo2axis_data_strcs/environment/library_path.sh
+source;share/robo2axis_data_strcs/environment/path.sh
+source;share/robo2axis_data_strcs/environment/pythonpath.sh

@@ -1,0 +1,3 @@
+[console_scripts]
+robo2axis_serial = robo2axis_serial.Teensy_to_ROS2_serial:main
+

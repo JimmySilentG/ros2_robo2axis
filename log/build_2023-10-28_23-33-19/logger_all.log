@@ -1,0 +1,198 @@
+[0.844s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.844s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fda75befee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fda75b9cee0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fda75b9cee0>>)
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.884s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jimmy/ros2_robo2axis'
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.885s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.885s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.885s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.885s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extensions ['ignore', 'ignore_ament_install']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extension 'ignore'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extension 'ignore_ament_install'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extensions ['colcon_pkg']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extension 'colcon_pkg'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extensions ['colcon_meta']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extension 'colcon_meta'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extensions ['ros']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_data_strcs) by extension 'ros'
+[0.897s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robo2axis_data_strcs' with type 'ros.ament_cmake' and name 'robo2axis_data_strcs'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extensions ['ignore', 'ignore_ament_install']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extension 'ignore'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extension 'ignore_ament_install'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extensions ['colcon_pkg']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extension 'colcon_pkg'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extensions ['colcon_meta']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extension 'colcon_meta'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extensions ['ros']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/robo2axis_serial) by extension 'ros'
+[0.898s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robo2axis_serial' with type 'ros.ament_python' and name 'robo2axis_serial'
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.002s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/humble
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_args' from command line to 'None'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_target' from command line to 'None'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_clean_first' from command line to 'False'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'cmake_force_configure' from command line to 'False'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'ament_cmake_args' from command line to 'None'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_data_strcs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.086s] DEBUG:colcon.colcon_core.verb:Building package 'robo2axis_data_strcs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs', 'merge_install': False, 'path': '/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs', 'symlink_install': False, 'test_result_base': None}
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_args' from command line to 'None'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_target' from command line to 'None'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_clean_cache' from command line to 'False'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_clean_first' from command line to 'False'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'cmake_force_configure' from command line to 'False'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'ament_cmake_args' from command line to 'None'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'catkin_cmake_args' from command line to 'None'
+[1.098s] Level 5:colcon.colcon_core.verb:set package 'robo2axis_serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.098s] DEBUG:colcon.colcon_core.verb:Building package 'robo2axis_serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_robo2axis/build/robo2axis_serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_robo2axis/install/robo2axis_serial', 'merge_install': False, 'path': '/home/jimmy/ros2_robo2axis/src/robo2axis_serial', 'symlink_install': False, 'test_result_base': None}
+[1.110s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.123s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.123s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs' with build type 'ament_cmake'
+[1.123s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs'
+[1.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.137s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.137s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12
+[1.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs
+[1.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo2axis_data_strcs)
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs
+[1.596s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs' for CMake module files
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs' for CMake config files
+[1.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_data_strcs', 'cmake_prefix_path')
+[1.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.ps1'
+[1.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.sh'
+[1.611s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib'
+[1.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_data_strcs', 'ld_library_path_lib')
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.ps1'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.dsv'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.sh'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/bin'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/pkgconfig/robo2axis_data_strcs.pc'
+[1.626s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/python3.10/site-packages'
+[1.626s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/bin'
+[1.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.ps1'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.sh'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.bash'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.zsh'
+[1.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/colcon-core/packages/robo2axis_data_strcs)
+[1.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo2axis_data_strcs)
+[1.720s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs' for CMake module files
+[1.721s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs' for CMake config files
+[1.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_data_strcs', 'cmake_prefix_path')
+[1.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.ps1'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.dsv'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/cmake_prefix_path.sh'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib'
+[1.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_data_strcs', 'ld_library_path_lib')
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.ps1'
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.dsv'
+[1.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/hook/ld_library_path_lib.sh'
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/bin'
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/pkgconfig/robo2axis_data_strcs.pc'
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/python3.10/site-packages'
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/bin'
+[1.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.ps1'
+[1.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.dsv'
+[1.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.sh'
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.bash'
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.zsh'
+[1.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/colcon-core/packages/robo2axis_data_strcs)
+[1.765s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jimmy/ros2_robo2axis/src/robo2axis_serial' with build type 'ament_python'
+[1.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_serial', 'ament_prefix_path')
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/ament_prefix_path.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/ament_prefix_path.dsv'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/ament_prefix_path.sh'
+[1.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.794s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.037s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jimmy/ros2_robo2axis/src/robo2axis_serial'
+[2.050s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_robo2axis/src/robo2axis_serial': AMENT_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs LD_LIBRARY_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jimmy/ros2_robo2axis/build/robo2axis_serial/prefix_override:/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib/python3.10/site-packages:/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo2axis_serial build --build-base /home/jimmy/ros2_robo2axis/build/robo2axis_serial/build install --record /home/jimmy/ros2_robo2axis/build/robo2axis_serial/install.log --single-version-externally-managed
+[2.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_robo2axis/src/robo2axis_serial' returned '0': AMENT_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs LD_LIBRARY_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jimmy/ros2_robo2axis/build/robo2axis_serial/prefix_override:/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib/python3.10/site-packages:/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo2axis_serial build --build-base /home/jimmy/ros2_robo2axis/build/robo2axis_serial/build install --record /home/jimmy/ros2_robo2axis/build/robo2axis_serial/install.log --single-version-externally-managed
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial' for CMake module files
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial' for CMake config files
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib'
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/bin'
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib/pkgconfig/robo2axis_serial.pc'
+[2.609s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/lib/python3.10/site-packages'
+[2.609s] Level 1:colcon.colcon_core.shell:create_environment_hook('robo2axis_serial', 'pythonpath')
+[2.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/pythonpath.ps1'
+[2.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/pythonpath.dsv'
+[2.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/hook/pythonpath.sh'
+[2.622s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/bin'
+[2.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robo2axis_serial)
+[2.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/package.ps1'
+[2.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/package.dsv'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/package.sh'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/package.bash'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/robo2axis_serial/package.zsh'
+[2.637s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_robo2axis/install/robo2axis_serial/share/colcon-core/packages/robo2axis_serial)
+[2.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.639s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.657s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.657s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.657s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.666s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_robo2axis/install/local_setup.ps1'
+[2.681s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jimmy/ros2_robo2axis/install/_local_setup_util_ps1.py'
+[2.682s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_robo2axis/install/setup.ps1'
+[2.696s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_robo2axis/install/local_setup.sh'
+[2.697s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jimmy/ros2_robo2axis/install/_local_setup_util_sh.py'
+[2.697s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_robo2axis/install/setup.sh'
+[2.711s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_robo2axis/install/local_setup.bash'
+[2.712s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_robo2axis/install/setup.bash'
+[2.725s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_robo2axis/install/local_setup.zsh'
+[2.726s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_robo2axis/install/setup.zsh'
