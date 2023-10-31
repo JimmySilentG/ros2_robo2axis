@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/robo2axis_PID/robo2axis_PID.egg-info
+writing ../../build/robo2axis_PID/robo2axis_PID.egg-info/PKG-INFO
+writing dependency_links to ../../build/robo2axis_PID/robo2axis_PID.egg-info/dependency_links.txt
+writing entry points to ../../build/robo2axis_PID/robo2axis_PID.egg-info/entry_points.txt
+writing requirements to ../../build/robo2axis_PID/robo2axis_PID.egg-info/requires.txt
+writing top-level names to ../../build/robo2axis_PID/robo2axis_PID.egg-info/top_level.txt
+writing manifest file '../../build/robo2axis_PID/robo2axis_PID.egg-info/SOURCES.txt'
+reading manifest file '../../build/robo2axis_PID/robo2axis_PID.egg-info/SOURCES.txt'
+writing manifest file '../../build/robo2axis_PID/robo2axis_PID.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build
+creating /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib
+creating /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib/robo2axis_PID
+copying robo2axis_PID/Axis_Controller.py -> /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib/robo2axis_PID
+copying robo2axis_PID/__init__.py -> /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib/robo2axis_PID
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID
+copying /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib/robo2axis_PID/Axis_Controller.py -> /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID
+copying /home/jimmy/ros2_robo2axis/build/robo2axis_PID/build/lib/robo2axis_PID/__init__.py -> /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID
+byte-compiling /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID/Axis_Controller.py to Axis_Controller.cpython-310.pyc
+byte-compiling /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/jimmy/ros2_robo2axis/install/robo2axis_PID/share/ament_index
+creating /home/jimmy/ros2_robo2axis/install/robo2axis_PID/share/ament_index/resource_index
+creating /home/jimmy/ros2_robo2axis/install/robo2axis_PID/share/ament_index/resource_index/packages
+copying resource/robo2axis_PID -> /home/jimmy/ros2_robo2axis/install/robo2axis_PID/share/ament_index/resource_index/packages
+copying package.xml -> /home/jimmy/ros2_robo2axis/install/robo2axis_PID/share/robo2axis_PID
+running install_egg_info
+Copying ../../build/robo2axis_PID/robo2axis_PID.egg-info to /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/python3.10/site-packages/robo2axis_PID-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robo2axis_PID script to /home/jimmy/ros2_robo2axis/install/robo2axis_PID/lib/robo2axis_PID
+writing list of installed files to '/home/jimmy/ros2_robo2axis/build/robo2axis_PID/install.log'

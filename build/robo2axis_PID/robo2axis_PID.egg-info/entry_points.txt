@@ -1,0 +1,3 @@
+[console_scripts]
+robo2axis_PID = robo2axis_PID.Axis_Controller:main
+
