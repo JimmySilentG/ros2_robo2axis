@@ -31,7 +31,7 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         msg.axis1 = first #assign first parameter to axis1 attribute of the custom message
         msg.axis2 = second #assign second paramter to axis2 attribute of the custom message
         self.publisher_.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
-        #self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent
+        self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent
 
     def clear_buffer(self): #method used to clear the buffer of the incoming data
         self.ser.reset_input_buffer()
@@ -65,8 +65,9 @@ def main(args=None):
             Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648, int.from_bytes(axis2val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
             Teensy_to_ROS2_Serial_node.clear_buffer()
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
-        time.sleep(0.005) #sleep for 100th of a second so my computer fans shut up, will raise to 500ish hz once on the RPi
-
+        time.sleep(0.01) #sleep for 100th of a second so my computer fans shut up, will raise to 500ish hz once on the RPi
+        #remember to up speed of teensy before going ham on this sleep. I can get another teensy, not a rpi
+        
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)

@@ -31,7 +31,7 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         msg.axis1 = first #assign first parameter to axis1 attribute of the custom message
         msg.axis2 = second #assign second paramter to axis2 attribute of the custom message
         self.publisher_.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
-        #self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent
+        self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent
 
     def clear_buffer(self): #method used to clear the buffer of the incoming data
         self.ser.reset_input_buffer()
