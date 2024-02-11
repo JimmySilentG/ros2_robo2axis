@@ -14,7 +14,7 @@ import rclpy #import python client library
 from rclpy.node import Node #import node class for our class defintion
 #from rclpy.qos import(maybe try to get sensor data profile if shit is buggy)
 from robo2axis_data_strcs.msg import EncoderCounts #import custom message interface to store encoder counts
-import serial #import python serial to acess serial port
+import serial #import python serial to access serial port
 import time #import time
 
 class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already defined Node class
