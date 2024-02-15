@@ -78,11 +78,18 @@ rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/enc
 rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em
 rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp: rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl
+rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp: rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp --generator-arguments-file /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_fastrtps_cpp__arguments.json
 
 rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp
@@ -98,14 +105,30 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.s
 
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o -MF CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o.d -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o -c /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp
+
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp > CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.i
+
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.s
+
 # Object files for target robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp
 robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
-"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o"
+"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o" \
+"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o"
 
 # External object files for target robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp
 robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o
+librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/build.make
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
@@ -113,7 +136,7 @@ librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,7 +147,9 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/clean
 
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/depend

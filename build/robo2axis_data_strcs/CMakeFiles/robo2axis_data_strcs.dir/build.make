@@ -67,6 +67,7 @@ include CMakeFiles/robo2axis_data_strcs.dir/compiler_depend.make
 include CMakeFiles/robo2axis_data_strcs.dir/progress.make
 
 CMakeFiles/robo2axis_data_strcs: /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs/msg/EncoderCounts.msg
+CMakeFiles/robo2axis_data_strcs: /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs/msg/DutyCycle.msg
 
 robo2axis_data_strcs: CMakeFiles/robo2axis_data_strcs
 robo2axis_data_strcs: CMakeFiles/robo2axis_data_strcs.dir/build.make

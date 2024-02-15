@@ -1,6 +1,7 @@
 {
   "package_name": "robo2axis_data_strcs",
   "non_idl_tuples": [
-    "/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs:msg/EncoderCounts.msg"
+    "/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs:msg/EncoderCounts.msg",
+    "/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs:msg/DutyCycle.msg"
   ]
 }

@@ -360,7 +360,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robo2axis_data_strcs/msg" TYPE FILE FILES "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robo2axis_data_strcs/msg" TYPE FILE FILES "/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs/msg/EncoderCounts.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robo2axis_data_strcs/msg" TYPE FILE FILES "/home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs/msg/DutyCycle.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -83,14 +83,30 @@ CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/rob
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.s
 
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/flags.make
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o: rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o -MF CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o.d -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o -c /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c
+
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c > CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.i
+
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.s
+
 # Object files for target robo2axis_data_strcs__rosidl_generator_py
 robo2axis_data_strcs__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o"
+"CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o" \
+"CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o"
 
 # External object files for target robo2axis_data_strcs__rosidl_generator_py
 robo2axis_data_strcs__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o
+rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/build.make
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: librobo2axis_data_strcs__rosidl_typesupport_c.so
@@ -98,7 +114,7 @@ rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generat
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

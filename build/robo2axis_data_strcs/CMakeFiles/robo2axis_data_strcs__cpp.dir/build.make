@@ -70,6 +70,10 @@ CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/
 CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__builder.hpp
 CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__struct.hpp
 CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__traits.hpp
+CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/duty_cycle.hpp
+CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__builder.hpp
+CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__struct.hpp
+CMakeFiles/robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__traits.hpp
 
 rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: /opt/ros/humbl
 rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl
+rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp: rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_cpp__arguments.json
 
@@ -99,10 +104,26 @@ rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__struct.hpp:
 rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__traits.hpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__traits.hpp
 
+rosidl_generator_cpp/robo2axis_data_strcs/msg/duty_cycle.hpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robo2axis_data_strcs/msg/duty_cycle.hpp
+
+rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__builder.hpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__builder.hpp
+
+rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__struct.hpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__struct.hpp
+
+rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__traits.hpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__traits.hpp
+
 robo2axis_data_strcs__cpp: CMakeFiles/robo2axis_data_strcs__cpp
+robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__builder.hpp
+robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__struct.hpp
+robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__traits.hpp
 robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__builder.hpp
 robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__struct.hpp
 robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__traits.hpp
+robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/duty_cycle.hpp
 robo2axis_data_strcs__cpp: rosidl_generator_cpp/robo2axis_data_strcs/msg/encoder_counts.hpp
 robo2axis_data_strcs__cpp: CMakeFiles/robo2axis_data_strcs__cpp.dir/build.make
 .PHONY : robo2axis_data_strcs__cpp

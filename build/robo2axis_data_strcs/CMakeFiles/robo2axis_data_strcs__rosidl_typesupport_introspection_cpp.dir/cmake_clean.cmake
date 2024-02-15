@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.cpp.o"
+  "CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.cpp.o.d"
   "CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.cpp.o"
   "CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.cpp.o.d"
   "librobo2axis_data_strcs__rosidl_typesupport_introspection_cpp.pdb"
   "librobo2axis_data_strcs__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.cpp"
 )

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/robo2axis_data_strcs/msg/__init__.py"
+  "../rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle.py"
+  "../rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c"
   "../rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts.py"
   "../rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c"
   "CMakeFiles/robo2axis_data_strcs__py"

@@ -3,7 +3,8 @@
   "output_dir": "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_introspection_c/robo2axis_data_strcs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/EncoderCounts.idl"
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/EncoderCounts.idl",
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/DutyCycle.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -14,6 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl"
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl",
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl"
   ]
 }

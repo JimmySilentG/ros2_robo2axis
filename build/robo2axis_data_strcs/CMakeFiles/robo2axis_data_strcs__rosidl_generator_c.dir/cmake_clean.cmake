@@ -1,12 +1,19 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o"
+  "CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o.d"
   "CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o"
   "CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o.d"
   "librobo2axis_data_strcs__rosidl_generator_c.pdb"
   "librobo2axis_data_strcs__rosidl_generator_c.so"
+  "rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c"
+  "rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h"
+  "rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h"
+  "rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h"
   "rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c"
   "rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h"
   "rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h"
   "rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h"
+  "rosidl_generator_c/robo2axis_data_strcs/msg/duty_cycle.h"
   "rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h"
 )
 

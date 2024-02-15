@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robo2axis_data_strcs/msg/DutyCycle.msg
+// generated code does not contain a copyright notice
+
+
+module robo2axis_data_strcs {
+  module msg {
+    struct DutyCycle {
+      int8 dcpercent;
+    };
+  };
+};

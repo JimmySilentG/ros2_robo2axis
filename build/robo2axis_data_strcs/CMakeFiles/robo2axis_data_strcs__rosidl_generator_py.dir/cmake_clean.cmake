@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o"
+  "CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o.d"
   "CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o"
   "CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o.d"
   "rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.pdb"

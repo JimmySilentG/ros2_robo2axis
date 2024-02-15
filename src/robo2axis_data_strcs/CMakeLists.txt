@@ -11,6 +11,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EncoderCounts.msg"
+  "msg/DutyCycle.msg"
  )
 # uncomment the following section in order to fill in
 # further dependencies manually.

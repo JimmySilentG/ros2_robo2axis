@@ -1,2 +1,4 @@
+msg/DutyCycle.idl
+msg/DutyCycle.msg
 msg/EncoderCounts.idl
 msg/EncoderCounts.msg

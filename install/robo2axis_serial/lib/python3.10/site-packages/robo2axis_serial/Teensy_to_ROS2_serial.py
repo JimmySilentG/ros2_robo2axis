@@ -14,14 +14,14 @@ import rclpy #import python client library
 from rclpy.node import Node #import node class for our class defintion
 #from rclpy.qos import(maybe try to get sensor data profile if shit is buggy)
 from robo2axis_data_strcs.msg import EncoderCounts #import custom message interface to store encoder counts
-import serial #import python serial to acess serial port
+import serial #import python serial to access serial port
 import time #import time
 
 class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already defined Node class
 
     def __init__(self):
         super().__init__('Teensy_to_ROS2_Serial_node') #construct this class based on the Node class with super.() and name the node
-        self.publisher_ = self.create_publisher(EncoderCounts, 'Encoder_Count_Topic', 1,) #create a publisher in this node with message type EncoderCounts and publish to the encoder count topic and give the topic a history depth of 1
+        self.publisher = self.create_publisher(EncoderCounts, 'Encoder_Count_Topic', 1,) #create a publisher in this node with message type EncoderCounts and publish to the encoder count topic and give the topic a history depth of 1
         #(Dont have pwm format determined yet)self.subscriber = self.create_subscription()
         self.ser = serial.Serial('/dev/ttyACM0',115200,timeout = None) #open serial port assigned to teensy, this can change between ACMO and ACM1, set baudrate to 115200 even though teensy ignores it. timeout set to none so the port waits forever until the requested number of bytes are recieved
         time.sleep(2) #sleep program for 2 seconds to give teensy time to reload/start sending data stream
@@ -30,8 +30,8 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         msg = EncoderCounts() #assign the encoder counts class import to msg variable
         msg.axis1 = first #assign first parameter to axis1 attribute of the custom message
         msg.axis2 = second #assign second paramter to axis2 attribute of the custom message
-        self.publisher_.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
-        self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent
+        self.publisher.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
+        #self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent (disabled again to test Axis Controller)
 
     def clear_buffer(self): #method used to clear the buffer of the incoming data
         self.ser.reset_input_buffer()

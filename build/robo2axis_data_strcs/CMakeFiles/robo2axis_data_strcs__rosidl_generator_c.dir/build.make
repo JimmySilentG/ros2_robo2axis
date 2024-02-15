@@ -83,6 +83,7 @@ rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h: /opt/ros/humble/sh
 rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h: rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl
+rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h: rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c__arguments.json
 
@@ -95,8 +96,23 @@ rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h: ros
 rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h
 
+rosidl_generator_c/robo2axis_data_strcs/msg/duty_cycle.h: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/duty_cycle.h
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h
+
 rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c
 
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/flags.make
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o: rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c
@@ -112,19 +128,35 @@ CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.s
 
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/flags.make
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o: rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o -MF CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o.d -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o -c /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c
+
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c > CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.i
+
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c -o CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.s
+
 # Object files for target robo2axis_data_strcs__rosidl_generator_c
 robo2axis_data_strcs__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o"
+"CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o" \
+"CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o"
 
 # External object files for target robo2axis_data_strcs__rosidl_generator_c
 robo2axis_data_strcs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 librobo2axis_data_strcs__rosidl_generator_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o
+librobo2axis_data_strcs__rosidl_generator_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o
 librobo2axis_data_strcs__rosidl_generator_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/build.make
 librobo2axis_data_strcs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobo2axis_data_strcs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librobo2axis_data_strcs__rosidl_generator_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library librobo2axis_data_strcs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library librobo2axis_data_strcs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,10 +167,15 @@ CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/clean
 
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h
+CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/duty_cycle.h
 CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend: rosidl_generator_c/robo2axis_data_strcs/msg/encoder_counts.h
 	cd /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/depend

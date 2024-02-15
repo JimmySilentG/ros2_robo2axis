@@ -3,7 +3,8 @@
   "output_dir": "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_py/robo2axis_data_strcs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/EncoderCounts.idl"
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/EncoderCounts.idl",
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs:msg/DutyCycle.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl"
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl",
+    "/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl"
   ]
 }

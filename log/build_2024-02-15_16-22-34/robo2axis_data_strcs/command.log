@@ -1,0 +1,2 @@
+Invoking command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12
+Invoked command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12

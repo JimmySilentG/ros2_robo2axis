@@ -76,8 +76,12 @@ rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp: 
 rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em
 rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp: rosidl_adapter/robo2axis_data_strcs/msg/EncoderCounts.idl
+rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp: rosidl_adapter/robo2axis_data_strcs/msg/DutyCycle.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
+
+rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp: rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp
 
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o: rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp
@@ -93,21 +97,37 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/r
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.s
 
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o: rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o -MF CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o.d -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o -c /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp
+
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp > CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.i
+
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp -o CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.s
+
 # Object files for target robo2axis_data_strcs__rosidl_typesupport_c
 robo2axis_data_strcs__rosidl_typesupport_c_OBJECTS = \
-"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o"
+"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o" \
+"CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o"
 
 # External object files for target robo2axis_data_strcs__rosidl_typesupport_c
 robo2axis_data_strcs__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 
 librobo2axis_data_strcs__rosidl_typesupport_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o
+librobo2axis_data_strcs__rosidl_typesupport_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o
 librobo2axis_data_strcs__rosidl_typesupport_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/build.make
 librobo2axis_data_strcs__rosidl_typesupport_c.so: librobo2axis_data_strcs__rosidl_generator_c.so
 librobo2axis_data_strcs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 librobo2axis_data_strcs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librobo2axis_data_strcs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 librobo2axis_data_strcs__rosidl_typesupport_c.so: CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -118,6 +138,7 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/clean
 
+CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp
 CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp
 	cd /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/src/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/depend
