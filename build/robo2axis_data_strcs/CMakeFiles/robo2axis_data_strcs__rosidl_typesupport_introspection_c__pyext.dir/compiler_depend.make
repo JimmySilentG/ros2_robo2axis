@@ -245,8 +245,13 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_c__pyext.dir/r
   rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h \
   rosidl_generator_c/robo2axis_data_strcs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h \
-  rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h
+  rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h \
+  rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h \
+  rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h \
+  rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h
 
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h:
 
 rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h:
 
@@ -257,6 +262,8 @@ rosidl_generator_c/robo2axis_data_strcs/msg/rosidl_generator_c__visibility_contr
 /usr/include/python3.10/pystrcmp.h:
 
 /usr/include/python3.10/eval.h:
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h:
 
 /usr/include/python3.10/cpython/import.h:
 
@@ -661,6 +668,8 @@ rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h:
 /usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h:
 
 /usr/include/python3.10/cpython/abstract.h:
 

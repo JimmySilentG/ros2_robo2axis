@@ -20,7 +20,7 @@ extern "C"
 /// Struct defined in msg/DutyCycle in the package robo2axis_data_strcs.
 typedef struct robo2axis_data_strcs__msg__DutyCycle
 {
-  int8_t dcpercent;
+  float dcpercent;
 } robo2axis_data_strcs__msg__DutyCycle;
 
 // Struct for a sequence of robo2axis_data_strcs__msg__DutyCycle.

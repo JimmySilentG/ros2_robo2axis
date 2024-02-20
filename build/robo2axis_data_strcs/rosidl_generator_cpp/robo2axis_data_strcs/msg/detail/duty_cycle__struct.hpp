@@ -38,7 +38,7 @@ struct DutyCycle_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dcpercent = 0;
+      this->dcpercent = 0.0f;
     }
   }
 
@@ -48,18 +48,18 @@ struct DutyCycle_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dcpercent = 0;
+      this->dcpercent = 0.0f;
     }
   }
 
   // field types and members
   using _dcpercent_type =
-    int8_t;
+    float;
   _dcpercent_type dcpercent;
 
   // setters for named parameter idiom
   Type & set__dcpercent(
-    const int8_t & _arg)
+    const float & _arg)
   {
     this->dcpercent = _arg;
     return *this;

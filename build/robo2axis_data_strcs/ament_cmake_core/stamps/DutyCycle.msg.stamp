@@ -1,1 +1,1 @@
-int8 dcpercent
+float32 dcpercent

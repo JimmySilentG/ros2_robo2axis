@@ -28,13 +28,14 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         self.setpoint = setpoint #creates a class attiribute of parameter so it can be used in startcalc callback
         self.subscription = self.create_subscription(EncoderCounts, 'Encoder_Count_Topic', self.start_calc, 1) #creates a subscription to the encoder counts topic with start calc callback funciton and a history depth of 1(callback function is automatically handed encoder counts message)
         self.subscription  # prevent unused variable warning
-        self.publisher = self.create_publisher(DutyCycle,'Waist_PID_Command',1) #creates publisher to Waist PID Command topic with message type DutyCycle that I need to create :()
+        self.publisher = self.create_publisher(DutyCycle,'Waist_PID_Command',1) #creates publisher to Waist PID Command topic with message type DutyCycle
+        self.create_timer(0.004, self.DC_publish) #if a message to the subscription is not found in the first period this could fail(utilizes forward decleration which isnt ideal but works in this case) .004 is 250hz which is what we want. look at topic publish rate in foxy tutorial to verify 250hz
         self.p_err_prev = 0
         self.i_err = 0
 
     def start_calc(self, msg):
-        self.get_logger().info('PID saw axis1 = "%d" and axis2 = "%d"' % (msg.axis1, msg.axis2))
-        Kp = 1 #proportional constant, all variables need to be tuned
+        #self.get_logger().info('PID saw axis1 = "%d" and axis2 = "%d"' % (msg.axis1, msg.axis2))
+        Kp = 1 #proportional constant, all variables need to be tuned (maybe make these parameters so i can modify on launch?)
         Ki = 0 #integral constant
         Kd = 0 #derivative constant
 
@@ -58,23 +59,30 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
             DC_out = 100
         elif DC_out < -100:
             DC_out = -100
-        
-        self.get_logger().info('%.3f, %.3f, %.8f, %.3f, %.3f' % (self.p_err, self.i_err, d_err, dt, Rad_count)) #log it so i know shit is working
 
+        #need to have some more logic here to prevent integral windup over long periods of time
+        
         #variable handling
         self.p_err_prev = self.p_err #previous proportional is now the current for next loop
         self.time = int(self.get_clock().now().nanoseconds) #end of PID calulation is end of loop and will determine dt to next loop (assumes once calculation is made the command to motor is made instantanously which i think is reasonable???)
         
+        #calculate and assign to class attribute so it can be referenced by the timer
+        self.msg_out = DutyCycle()
+        self.msg_out.dcpercent = DC_out 
+        self.get_logger().info('%.3f, %.3f, %.8f, %.3f, %.3f' % (self.p_err, self.i_err, d_err, dt, Rad_count)) #log it so i know shit is working
+        
         #clock = self.get_clock() #gets the clock from the node created (not sure if this clock starts ros starts or when this executable starts)
         #self.get_logger().info('Type: %f' % self.timestart)
 
+    def DC_publish(self): #function used as callback to publish calculated PID at specified rate
+        self.publisher.publish(self.msg_out)
+
 def main(args=None):
     rclpy.init(args=args)
-    robosetpoint = pi/2 #setpoint of positive 90 degrees from start
+    robosetpoint = pi/2 #setpoint of positive 90 degrees from start, will eventually come from opencv ROS2 node
     PID_Axis_Controller_node = PID_Axis_Controller(robosetpoint)
-    
-    rclpy.spin(PID_Axis_Controller_node) 
-    #now create a timer based event that 
+
+    rclpy.spin(PID_Axis_Controller_node) #no reason this node shouldnt run continuously
     #while rclpy.ok():
         #rclpy.spin_once(PID_Axis_Controller_node)
 

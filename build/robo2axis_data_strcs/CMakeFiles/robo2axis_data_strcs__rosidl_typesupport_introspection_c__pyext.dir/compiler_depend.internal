@@ -247,4 +247,7 @@ CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_c__pyext.dir/r
  /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/rosidl_generator_c__visibility_control.h
  /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h
  /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h
+ /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h
+ /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h
+ /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h
 

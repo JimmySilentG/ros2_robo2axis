@@ -40,7 +40,7 @@ void DutyCycle_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember DutyCycle_message_member_array[1] = {
   {
     "dcpercent",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

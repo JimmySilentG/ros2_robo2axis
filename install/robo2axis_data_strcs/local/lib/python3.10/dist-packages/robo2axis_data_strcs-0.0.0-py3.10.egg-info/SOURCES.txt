@@ -5,4 +5,5 @@ robo2axis_data_strcs.egg-info/SOURCES.txt
 robo2axis_data_strcs.egg-info/dependency_links.txt
 robo2axis_data_strcs.egg-info/top_level.txt
 robo2axis_data_strcs/msg/__init__.py
+robo2axis_data_strcs/msg/_duty_cycle.py
 robo2axis_data_strcs/msg/_encoder_counts.py

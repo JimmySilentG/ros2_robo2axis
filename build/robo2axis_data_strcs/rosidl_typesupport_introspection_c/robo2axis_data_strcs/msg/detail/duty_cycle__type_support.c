@@ -34,7 +34,7 @@ void robo2axis_data_strcs__msg__DutyCycle__rosidl_typesupport_introspection_c__D
 static rosidl_typesupport_introspection_c__MessageMember robo2axis_data_strcs__msg__DutyCycle__rosidl_typesupport_introspection_c__DutyCycle_message_member_array[1] = {
   {
     "dcpercent",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

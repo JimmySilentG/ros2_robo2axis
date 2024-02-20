@@ -6,7 +6,7 @@
 module robo2axis_data_strcs {
   module msg {
     struct DutyCycle {
-      int8 dcpercent;
+      float dcpercent;
     };
   };
 };

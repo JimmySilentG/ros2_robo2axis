@@ -31,7 +31,7 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         msg.axis1 = first #assign first parameter to axis1 attribute of the custom message
         msg.axis2 = 0 #assign second paramter to axis2 attribute of the custom message (set to zero now that base is only active PID)
         self.publisher.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
-        #self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent (disabled again to test Axis Controller)
+        self.get_logger().info('Publishing Encoder Counts: axis1 = %d' % (first)) #log the publishing with INFO level status and axis info sent (disabled again to test Axis Controller)
 
     def clear_buffer(self): #method used to clear the buffer of the incoming data
         self.ser.reset_input_buffer()
@@ -49,15 +49,16 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
                 return #something is wrong with data sender so return with nothing to break code
         return self.ser.read(4) #once while loop exits the next 4 bytes will be axis encoder counts so read and return
         #still getting some incomplete packets that are publishing crazy values but not too bad
+
         
 
-
+#need to make a timer that somehow only pulls from waist pid command topic and sends to teensy at 500hz to prevent overflow
 def main(args=None):
     rclpy.init(args=args)
 
     Teensy_to_ROS2_Serial_node = Teensy_to_ROS2_Serial()
 
-    while rclpy.ok():
+    while rclpy.ok(): #need to now impliment timer to pull down msg from PID waist command topic and send it over serial to teensy
         while Teensy_to_ROS2_Serial_node.ser.in_waiting < 6: #while waiting for complete packet to send, spin the node to process callbacks
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
         if Teensy_to_ROS2_Serial_node.ser.in_waiting >= 6: #changed to 6 because we only have 1 motor on base using PID at the moment
@@ -65,7 +66,7 @@ def main(args=None):
             Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
             Teensy_to_ROS2_Serial_node.clear_buffer()
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
-        time.sleep(0.01) #sleep for 100th of a second so my computer fans shut up, will raise to 500ish hz once on the RPi
+        time.sleep(0.002) #sleep for 500th of a second to match that of teensy
         #remember to up speed of teensy before going ham on this sleep. I can get another teensy, not a rpi
         
     # Destroy the node explicitly

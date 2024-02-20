@@ -1,0 +1,244 @@
+[0.051s] Invoking command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12
+[0.165s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.329s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.338s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.350s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.654s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.813s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.018s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.038s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.061s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.061s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.072s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.096s] -- Added test 'lint_cmake' to check CMake code style
+[1.098s] -- Added test 'xmllint' to check XML markup files
+[1.102s] -- Configuring done
+[1.157s] -- Generating done
+[1.160s] -- Build files have been written to: /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs
+[1.181s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.190s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.203s] [  5%] Built target ament_cmake_python_copy_robo2axis_data_strcs
+[1.445s] running egg_info
+[1.446s] writing robo2axis_data_strcs.egg-info/PKG-INFO
+[1.446s] [  5%] Built target robo2axis_data_strcs__cpp
+[1.447s] writing dependency_links to robo2axis_data_strcs.egg-info/dependency_links.txt
+[1.447s] writing top-level names to robo2axis_data_strcs.egg-info/top_level.txt
+[1.451s] reading manifest file 'robo2axis_data_strcs.egg-info/SOURCES.txt'
+[1.456s] writing manifest file 'robo2axis_data_strcs.egg-info/SOURCES.txt'
+[1.461s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.462s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.466s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.472s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_generator_c[0m
+[1.491s] [ 17%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c.o[0m
+[1.492s] [ 17%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_c.dir/rosidl_generator_c/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c.o[0m
+[1.492s] [ 17%] Built target ament_cmake_python_build_robo2axis_data_strcs_egg
+[1.647s] [ 20%] [32m[1mLinking C shared library librobo2axis_data_strcs__rosidl_generator_c.so[0m
+[1.692s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_cpp[0m
+[1.697s] [ 20%] Built target robo2axis_data_strcs__rosidl_generator_c
+[1.707s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.707s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.710s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.717s] [ 30%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o[0m
+[1.723s] [ 33%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o[0m
+[1.759s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_introspection_cpp[0m
+[1.776s] [ 35%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.cpp.o[0m
+[1.778s] [ 38%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.cpp.o[0m
+[1.866s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp[0m
+[1.890s] [ 41%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/encoder_counts__type_support.cpp.o[0m
+[1.891s] [ 43%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robo2axis_data_strcs/msg/detail/dds_fastrtps/duty_cycle__type_support.cpp.o[0m
+[2.160s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_c[0m
+[2.196s] [ 46%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/duty_cycle__type_support.cpp.o[0m
+[2.198s] [ 48%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robo2axis_data_strcs/msg/encoder_counts__type_support.cpp.o[0m
+[2.217s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_fastrtps_c[0m
+[2.242s] [ 51%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support_c.cpp.o[0m
+[2.244s] [ 53%] [32mBuilding CXX object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support_c.cpp.o[0m
+[2.248s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_introspection_c[0m
+[2.270s] [ 56%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.c.o[0m
+[2.277s] [ 58%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.c.o[0m
+[2.279s] [ 61%] [32m[1mLinking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_c.so[0m
+[2.301s] [ 64%] [32m[1mLinking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_cpp.so[0m
+[2.341s] [ 66%] [32m[1mLinking C shared library librobo2axis_data_strcs__rosidl_typesupport_introspection_c.so[0m
+[2.365s] [ 66%] Built target robo2axis_data_strcs__rosidl_typesupport_c
+[2.398s] [ 66%] Built target robo2axis_data_strcs__rosidl_typesupport_introspection_c
+[2.405s] [ 66%] Built target robo2axis_data_strcs__rosidl_typesupport_cpp
+[2.461s] [ 69%] [32m[1mLinking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_introspection_cpp.so[0m
+[2.504s] [ 69%] Built target robo2axis_data_strcs__rosidl_typesupport_introspection_cpp
+[2.583s] [ 71%] [32m[1mLinking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.680s] [ 74%] [32m[1mLinking CXX shared library librobo2axis_data_strcs__rosidl_typesupport_fastrtps_c.so[0m
+[2.684s] [ 74%] Built target robo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp
+[2.756s] [ 74%] Built target robo2axis_data_strcs__rosidl_typesupport_fastrtps_c
+[2.774s] [ 74%] Built target robo2axis_data_strcs
+[2.792s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.135s] [ 76%] Built target robo2axis_data_strcs__py
+[3.145s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_generator_py[0m
+[3.163s] [ 82%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_encoder_counts_s.c.o[0m
+[3.163s] [ 82%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_generator_py.dir/rosidl_generator_py/robo2axis_data_strcs/msg/_duty_cycle_s.c.o[0m
+[3.302s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so[0m
+[3.340s] [ 84%] Built target robo2axis_data_strcs__rosidl_generator_py
+[3.350s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_c__pyext[0m
+[3.350s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_introspection_c__pyext[0m
+[3.350s] [35m[1mConsolidate compiler generated dependencies of target robo2axis_data_strcs__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.363s] [ 89%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.363s] [ 89%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.363s] [ 92%] [32mBuilding C object CMakeFiles/robo2axis_data_strcs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.450s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.451s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.456s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.482s] [100%] Built target robo2axis_data_strcs__rosidl_typesupport_c__pyext
+[3.482s] [100%] Built target robo2axis_data_strcs__rosidl_typesupport_introspection_c__pyext
+[3.490s] [100%] Built target robo2axis_data_strcs__rosidl_typesupport_fastrtps_c__pyext
+[3.501s] Invoked command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs -- -j12 -l12
+[3.580s] Invoking command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs
+[3.588s] -- Install configuration: ""
+[3.588s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/ament_index/resource_index/rosidl_interfaces/robo2axis_data_strcs
+[3.588s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.588s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.588s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/encoder_counts.h
+[3.588s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/rosidl_generator_c__visibility_control.h
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/duty_cycle.h
+[3.589s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__functions.h
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__functions.c
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.h
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__struct.h
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__functions.h
+[3.589s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.h
+[3.590s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__struct.h
+[3.590s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__functions.c
+[3.590s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/library_path.sh
+[3.590s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/library_path.dsv
+[3.590s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_generator_c.so
+[3.591s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_generator_c.so" to ""
+[3.591s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.591s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.591s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.591s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.591s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_fastrtps_c.h
+[3.591s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_fastrtps_c.h
+[3.591s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_fastrtps_c.so
+[3.592s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.592s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.592s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.592s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.592s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.592s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.c
+[3.593s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_introspection_c.h
+[3.593s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_introspection_c.h
+[3.593s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.c
+[3.593s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_introspection_c.so
+[3.594s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_introspection_c.so" to ""
+[3.594s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_c.so
+[3.594s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_c.so" to ""
+[3.594s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.594s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/encoder_counts.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/duty_cycle.hpp
+[3.595s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__builder.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__traits.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__builder.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__traits.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__struct.hpp
+[3.595s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__struct.hpp
+[3.596s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.596s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.596s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.596s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.596s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/dds_fastrtps
+[3.596s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_fastrtps_cpp.hpp
+[3.596s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_fastrtps_cpp.hpp
+[3.597s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so
+[3.598s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.598s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs
+[3.598s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg
+[3.598s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail
+[3.598s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__type_support.cpp
+[3.598s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__rosidl_typesupport_introspection_cpp.hpp
+[3.598s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/duty_cycle__type_support.cpp
+[3.598s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/include/robo2axis_data_strcs/robo2axis_data_strcs/msg/detail/encoder_counts__rosidl_typesupport_introspection_cpp.hpp
+[3.599s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_introspection_cpp.so
+[3.600s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.600s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_cpp.so
+[3.601s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_typesupport_cpp.so" to ""
+[3.601s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/pythonpath.sh
+[3.601s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/pythonpath.dsv
+[3.601s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs-0.0.0-py3.10.egg-info
+[3.601s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs-0.0.0-py3.10.egg-info/top_level.txt
+[3.601s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.602s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/librobo2axis_data_strcs__rosidl_generator_py.so
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_introspection_c.c
+[3.602s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.603s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_c.c
+[3.603s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.603s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/_robo2axis_data_strcs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.603s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg
+[3.603s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_encoder_counts_s.c
+[3.603s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_encoder_counts.py
+[3.604s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_duty_cycle.py
+[3.604s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_duty_cycle_s.c
+[3.604s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/__init__.py
+[3.604s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/__init__.py
+[3.635s] Listing '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs'...
+[3.635s] Compiling '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/__init__.py'...
+[3.635s] Listing '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg'...
+[3.635s] Compiling '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/__init__.py'...
+[3.635s] Compiling '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_duty_cycle.py'...
+[3.635s] Compiling '/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/msg/_encoder_counts.py'...
+[3.639s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.640s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.640s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.641s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.641s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.641s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages/robo2axis_data_strcs/robo2axis_data_strcs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.641s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_generator_py.so
+[3.642s] -- Set runtime path of "/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib/librobo2axis_data_strcs__rosidl_generator_py.so" to ""
+[3.642s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/msg/EncoderCounts.idl
+[3.642s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/msg/DutyCycle.idl
+[3.643s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/msg/EncoderCounts.msg
+[3.643s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/msg/DutyCycle.msg
+[3.643s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/ament_index/resource_index/package_run_dependencies/robo2axis_data_strcs
+[3.643s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/ament_index/resource_index/parent_prefix_path/robo2axis_data_strcs
+[3.643s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/ament_prefix_path.sh
+[3.643s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/ament_prefix_path.dsv
+[3.643s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/path.sh
+[3.644s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/environment/path.dsv
+[3.644s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/local_setup.bash
+[3.644s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/local_setup.sh
+[3.644s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/local_setup.zsh
+[3.644s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/local_setup.dsv
+[3.644s] -- Installing: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.dsv
+[3.644s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/ament_index/resource_index/packages/robo2axis_data_strcs
+[3.645s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_generator_cExport.cmake
+[3.645s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_generator_cExport-noconfig.cmake
+[3.645s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.645s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.646s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_introspection_cExport.cmake
+[3.646s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.646s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_cExport.cmake
+[3.646s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_cExport-noconfig.cmake
+[3.646s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_generator_cppExport.cmake
+[3.647s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.647s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.647s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_introspection_cppExport.cmake
+[3.647s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.648s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_cppExport.cmake
+[3.648s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.648s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_generator_pyExport.cmake
+[3.648s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/export_robo2axis_data_strcs__rosidl_generator_pyExport-noconfig.cmake
+[3.648s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/rosidl_cmake-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/ament_cmake_export_targets-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcsConfig.cmake
+[3.649s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/cmake/robo2axis_data_strcsConfig-version.cmake
+[3.650s] -- Up-to-date: /home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/share/robo2axis_data_strcs/package.xml
+[3.651s] Invoked command in '/home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jimmy/ros2_robo2axis/build/robo2axis_data_strcs
