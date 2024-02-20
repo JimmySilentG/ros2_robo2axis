@@ -26,10 +26,10 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         self.ser = serial.Serial('/dev/ttyACM0',115200,timeout = None) #open serial port assigned to teensy, this can change between ACMO and ACM1, set baudrate to 115200 even though teensy ignores it. timeout set to none so the port waits forever until the requested number of bytes are recieved
         time.sleep(2) #sleep program for 2 seconds to give teensy time to reload/start sending data stream
 
-    def publish_serial(self, first, second): #method used to publish serial data
+    def publish_serial(self, first): #method used to publish serial data
         msg = EncoderCounts() #assign the encoder counts class import to msg variable
         msg.axis1 = first #assign first parameter to axis1 attribute of the custom message
-        msg.axis2 = second #assign second paramter to axis2 attribute of the custom message
+        msg.axis2 = 0 #assign second paramter to axis2 attribute of the custom message (set to zero now that base is only active PID)
         self.publisher.publish(msg) #publish the message to the encoder_count_topic defined in class constuction
         #self.get_logger().info('Publishing Encoder Counts: axis1 = %d axis2 = %d' % (first, second)) #log the publishing with INFO level status and axis info sent (disabled again to test Axis Controller)
 
@@ -42,12 +42,12 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         count = 0 #count variable used to control excessively bad packets sent
         while (startline1 != b'\xaa') and (startline2 != b'\xaa'): #while the last two bytes read are not the starting 0xAA bytes...
             startline1 = self.ser.read(1) #reassign variables to next two byte sequence (realizing now that this could be better by stepping through each next byte in the event of getting the first byte chopped off and would imporove performance)
-            startline2 = self.ser.read(1)
+            startline2 = self.ser.read(1) #these obviously read one byte at a time from serial
             count += 1 #add one to the count
             if count > 5: #if count is above 5 you have stepped through two consecutive chances at getting good data and signifys that crappy data is being sent or something else is wrong
                 print('hey') #print hey to command line to catch my attention something bad is happening (could log a different level failure here using get_logger)
                 return #something is wrong with data sender so return with nothing to break code
-        return self.ser.read(4), self.ser.read(4) #once while loop exits the next 8 bytes will be axis encoder counts so read and return those
+        return self.ser.read(4) #once while loop exits the next 4 bytes will be axis encoder counts so read and return
         #still getting some incomplete packets that are publishing crazy values but not too bad
         
 
@@ -58,11 +58,11 @@ def main(args=None):
     Teensy_to_ROS2_Serial_node = Teensy_to_ROS2_Serial()
 
     while rclpy.ok():
-        while Teensy_to_ROS2_Serial_node.ser.in_waiting < 10: #while waiting for complete packet to send, spin the node to process callbacks
+        while Teensy_to_ROS2_Serial_node.ser.in_waiting < 6: #while waiting for complete packet to send, spin the node to process callbacks
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
-        if Teensy_to_ROS2_Serial_node.ser.in_waiting >= 10:
-            axis1val, axis2val = Teensy_to_ROS2_Serial_node.fetch_packet()
-            Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648, int.from_bytes(axis2val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
+        if Teensy_to_ROS2_Serial_node.ser.in_waiting >= 6: #changed to 6 because we only have 1 motor on base using PID at the moment
+            axis1val = Teensy_to_ROS2_Serial_node.fetch_packet()
+            Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
             Teensy_to_ROS2_Serial_node.clear_buffer()
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
         time.sleep(0.01) #sleep for 100th of a second so my computer fans shut up, will raise to 500ish hz once on the RPi

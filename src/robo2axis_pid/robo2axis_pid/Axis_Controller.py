@@ -33,7 +33,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         self.i_err = 0
 
     def start_calc(self, msg):
-        #self.get_logger().info('PID saw axis1 = "%d" and axis2 = "%d"' % (msg.axis1, msg.axis2))
+        self.get_logger().info('PID saw axis1 = "%d" and axis2 = "%d"' % (msg.axis1, msg.axis2))
         Kp = 1 #proportional constant, all variables need to be tuned
         Ki = 0 #integral constant
         Kd = 0 #derivative constant
@@ -51,6 +51,14 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         #derivative calc
         d_err = (self.p_err - self.p_err_prev)/dt
 
+        #PID output with clamping
+        DC_out = Kp*self.p_err + Ki*self.i_err + Kd*d_err
+
+        if DC_out > 100: #simple clamping logic
+            DC_out = 100
+        elif DC_out < -100:
+            DC_out = -100
+        
         self.get_logger().info('%.3f, %.3f, %.8f, %.3f, %.3f' % (self.p_err, self.i_err, d_err, dt, Rad_count)) #log it so i know shit is working
 
         #variable handling
@@ -65,7 +73,8 @@ def main(args=None):
     robosetpoint = pi/2 #setpoint of positive 90 degrees from start
     PID_Axis_Controller_node = PID_Axis_Controller(robosetpoint)
     
-    rclpy.spin(PID_Axis_Controller_node) #does this need parameter too?
+    rclpy.spin(PID_Axis_Controller_node) 
+    #now create a timer based event that 
     #while rclpy.ok():
         #rclpy.spin_once(PID_Axis_Controller_node)
 
