@@ -75,7 +75,7 @@ def main(args=None):
             Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
             Teensy_to_ROS2_Serial_node.clear_buffer()
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
-        time.sleep(0.001) #sleep for 500th of a second to match that of teensy
+        time.sleep(0.001) #sleep a little bit so pc doesnt explode
         #remember to up speed of teensy before going ham on this sleep. I can get another teensy, not a rpi
         
     # Destroy the node explicitly

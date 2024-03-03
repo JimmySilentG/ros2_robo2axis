@@ -40,14 +40,14 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         Kd = 0 #derivative constant
 
         Encoder_count = msg.axis1 #assigns axis 1 encoder count from subscription to variable
-        Rad_count = (float(Encoder_count)/691.0)*2*(pi/3.5) #convert encoder count to radian measure
+        Rad_count = (float(Encoder_count)/601.6)*2*(pi/3.5) #convert encoder count to radian measure 601.6 because only triggered by rising edge?
 
         #proportional calc
         self.p_err = self.setpoint - Rad_count #calculation of proportional error
         
         #integral calc
         dt = (int(self.get_clock().now().nanoseconds) - self.time)/1000000000 #calculate change in time (need to insert some sort of error for very large dt's that cause craziness)
-        self.i_err = self.i_err + (self.p_err - self.p_err_prev)*dt
+        self.i_err += ((self.p_err_prev + self.p_err)/2)*dt #trapezoidal integral approximation
 
         #derivative calc
         d_err = (self.p_err - self.p_err_prev)/dt
