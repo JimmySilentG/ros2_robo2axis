@@ -40,7 +40,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         Kd = 0 #derivative constant
 
         Encoder_count = msg.axis1 #assigns axis 1 encoder count from subscription to variable
-        Rad_count = (float(Encoder_count)/300.8)*2*pi #convert encoder count to radian measure
+        Rad_count = (float(Encoder_count)/691.0)*2*(pi/3.5) #convert encoder count to radian measure
 
         #proportional calc
         self.p_err = self.setpoint - Rad_count #calculation of proportional error
@@ -55,10 +55,10 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         #PID output with clamping
         DC_out = Kp*self.p_err + Ki*self.i_err + Kd*d_err
 
-        if DC_out > 100: #simple clamping logic
-            DC_out = 100
-        elif DC_out < -100:
-            DC_out = -100
+        if DC_out > 100.0: #simple clamping logic
+            DC_out = 100.0
+        elif DC_out < -100.0:
+            DC_out = -100.0
 
         #need to have some more logic here to prevent integral windup over long periods of time
         
@@ -75,7 +75,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         #self.get_logger().info('Type: %f' % self.timestart)
 
     def DC_publish(self): #function used as callback to publish calculated PID at specified rate
-        self.publisher.publish(self.msg_out)
+        self.publisher.publish(self.msg_out) #can use try logic here to get this to skip over dead packets and continue working
 
 def main(args=None):
     rclpy.init(args=args)

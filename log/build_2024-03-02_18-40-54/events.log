@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000182] (-) JobUnselected: {'identifier': 'robo2axis_data_strcs'}
+[0.000242] (-) JobUnselected: {'identifier': 'robo2axis_pid'}
+[0.000409] (-) JobUnselected: {'identifier': 'robo2axis_serial'}
+[0.000477] (-) EventReactorShutdown: {}

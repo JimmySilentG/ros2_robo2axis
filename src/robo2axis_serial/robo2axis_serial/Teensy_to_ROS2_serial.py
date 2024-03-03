@@ -36,6 +36,9 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
 
     def clear_buffer(self): #method used to clear the buffer of the incoming data
         self.ser.reset_input_buffer()
+        #if self.ser.in_waiting > 6:
+            #buffer_junk = self.ser.in_waiting - 6
+            #self.ser.read(buffer_junk)
 
     def fetch_packet(self): #(this may not work idk)method used to search for two 0xAA or 170 byte sequence signifing start of data packet. Does not confirm full packet is sent, reads next 8 bytes no matter what they are
         startline1 = self.ser.read(1) #read first byte available in buffer and assign it to startline1 variable
@@ -72,7 +75,7 @@ def main(args=None):
             Teensy_to_ROS2_Serial_node.publish_serial(int.from_bytes(axis1val, 'little') - 2147483648) #instead of dealing with sending around a signed long, send an unsigned one and we will manually adjust middle count
             Teensy_to_ROS2_Serial_node.clear_buffer()
             rclpy.spin_once(Teensy_to_ROS2_Serial_node, timeout_sec=0)
-        time.sleep(0.002) #sleep for 500th of a second to match that of teensy
+        time.sleep(0.001) #sleep for 500th of a second to match that of teensy
         #remember to up speed of teensy before going ham on this sleep. I can get another teensy, not a rpi
         
     # Destroy the node explicitly
