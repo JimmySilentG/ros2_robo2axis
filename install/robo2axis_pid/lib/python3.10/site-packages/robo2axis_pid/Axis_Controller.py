@@ -40,7 +40,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         Kd = 0 #derivative constant
 
         Encoder_count = msg.axis1 #assigns axis 1 encoder count from subscription to variable
-        Rad_count = (float(Encoder_count)/601.6)*2*(pi/3.5) #convert encoder count to radian measure 601.6 because only triggered by rising edge?
+        Rad_count = (float(Encoder_count)/1203.2)*2*(pi/3.5) #convert encoder count to radian measure
 
         #proportional calc
         self.p_err = self.setpoint - Rad_count #calculation of proportional error
@@ -69,7 +69,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         #calculate and assign to class attribute so it can be referenced by the timer
         self.msg_out = DutyCycle()
         self.msg_out.dcpercent = DC_out 
-        self.get_logger().info('%.3f, %.3f, %.8f, %.3f, %.3f' % (self.p_err, self.i_err, d_err, dt, Rad_count)) #log it so i know shit is working
+        self.get_logger().info('%.3f, %.3f, %.8f, %.3f, %.3f, %.3f' % (self.p_err, self.i_err, d_err, dt, Rad_count, DC_out)) #log it so i know shit is working
         
         #clock = self.get_clock() #gets the clock from the node created (not sure if this clock starts ros starts or when this executable starts)
         #self.get_logger().info('Type: %f' % self.timestart)
