@@ -35,9 +35,9 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
 
     def start_calc(self, msg):
         #self.get_logger().info('PID saw axis1 = "%d" and axis2 = "%d"' % (msg.axis1, msg.axis2))
-        Kp = 1 #proportional constant, all variables need to be tuned (maybe make these parameters so i can modify on launch?)
-        Ki = 0 #integral constant
-        Kd = 0 #derivative constant
+        Kp = 45 #proportional constant, all variables need to be tuned (maybe make these parameters so i can modify on launch?)
+        Ki = 30 #integral constant
+        Kd = 10 #derivative constant
 
         Encoder_count = msg.axis1 #assigns axis 1 encoder count from subscription to variable
         Rad_count = (float(Encoder_count)/1203.2)*2*(pi/3.5) #convert encoder count to radian measure
@@ -79,7 +79,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
 
 def main(args=None):
     rclpy.init(args=args)
-    robosetpoint = pi/2 #setpoint of positive 90 degrees from start, will eventually come from opencv ROS2 node
+    robosetpoint = pi #setpoint of positive 90 degrees from start, will eventually come from opencv ROS2 node
     PID_Axis_Controller_node = PID_Axis_Controller(robosetpoint)
 
     rclpy.spin(PID_Axis_Controller_node) #no reason this node shouldnt run continuously

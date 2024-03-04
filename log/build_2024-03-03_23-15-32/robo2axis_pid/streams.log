@@ -1,0 +1,26 @@
+[0.945s] Invoking command in '/home/jimmy/ros2_robo2axis/src/robo2axis_pid': AMENT_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs LD_LIBRARY_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jimmy/ros2_robo2axis/build/robo2axis_pid/prefix_override:/home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages:/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo2axis_pid build --build-base /home/jimmy/ros2_robo2axis/build/robo2axis_pid/build install --record /home/jimmy/ros2_robo2axis/build/robo2axis_pid/install.log --single-version-externally-managed
+[1.160s] running egg_info
+[1.160s] writing ../../build/robo2axis_pid/robo2axis_pid.egg-info/PKG-INFO
+[1.161s] writing dependency_links to ../../build/robo2axis_pid/robo2axis_pid.egg-info/dependency_links.txt
+[1.161s] writing entry points to ../../build/robo2axis_pid/robo2axis_pid.egg-info/entry_points.txt
+[1.161s] writing requirements to ../../build/robo2axis_pid/robo2axis_pid.egg-info/requires.txt
+[1.161s] writing top-level names to ../../build/robo2axis_pid/robo2axis_pid.egg-info/top_level.txt
+[1.163s] reading manifest file '../../build/robo2axis_pid/robo2axis_pid.egg-info/SOURCES.txt'
+[1.163s] writing manifest file '../../build/robo2axis_pid/robo2axis_pid.egg-info/SOURCES.txt'
+[1.164s] running build
+[1.164s] running build_py
+[1.164s] copying robo2axis_pid/Axis_Controller.py -> /home/jimmy/ros2_robo2axis/build/robo2axis_pid/build/lib/robo2axis_pid
+[1.164s] running install
+[1.164s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.164s]   warnings.warn(
+[1.164s] running install_lib
+[1.165s] copying /home/jimmy/ros2_robo2axis/build/robo2axis_pid/build/lib/robo2axis_pid/Axis_Controller.py -> /home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages/robo2axis_pid
+[1.165s] byte-compiling /home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages/robo2axis_pid/Axis_Controller.py to Axis_Controller.cpython-310.pyc
+[1.166s] running install_data
+[1.167s] running install_egg_info
+[1.168s] removing '/home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages/robo2axis_pid-0.0.0-py3.10.egg-info' (and everything under it)
+[1.168s] Copying ../../build/robo2axis_pid/robo2axis_pid.egg-info to /home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages/robo2axis_pid-0.0.0-py3.10.egg-info
+[1.169s] running install_scripts
+[1.188s] Installing robo2axis_pid script to /home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/robo2axis_pid
+[1.188s] writing list of installed files to '/home/jimmy/ros2_robo2axis/build/robo2axis_pid/install.log'
+[1.212s] Invoked command in '/home/jimmy/ros2_robo2axis/src/robo2axis_pid' returned '0': AMENT_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs LD_LIBRARY_PATH=/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jimmy/ros2_robo2axis/build/robo2axis_pid/prefix_override:/home/jimmy/ros2_robo2axis/install/robo2axis_pid/lib/python3.10/site-packages:/home/jimmy/ros2_robo2axis/install/robo2axis_data_strcs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robo2axis_pid build --build-base /home/jimmy/ros2_robo2axis/build/robo2axis_pid/build install --record /home/jimmy/ros2_robo2axis/build/robo2axis_pid/install.log --single-version-externally-managed
