@@ -29,6 +29,7 @@ class PID_Axis_Controller(Node): #define a new class based upon the already defi
         self.subscription = self.create_subscription(EncoderCounts, 'Encoder_Count_Topic', self.start_calc, 1) #creates a subscription to the encoder counts topic with start calc callback funciton and a history depth of 1(callback function is automatically handed encoder counts message)
         self.subscription  # prevent unused variable warning
         self.publisher = self.create_publisher(DutyCycle,'Waist_PID_Command',1) #creates publisher to Waist PID Command topic with message type DutyCycle
+        time.sleep(0.005) #prevents forward declaration error by allowing serial node to start first
         self.create_timer(0.004, self.DC_publish) #if a message to the subscription is not found in the first period this could fail(utilizes forward decleration which isnt ideal but works in this case) .004 is 250hz which is what we want.
         self.p_err_prev = 0
         self.i_err = 0

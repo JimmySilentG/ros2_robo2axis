@@ -26,7 +26,7 @@ class Teensy_to_ROS2_Serial(Node): #define a new class based upon the already de
         self.subscriber = self.create_subscription(DutyCycle, 'Waist_PID_Command', self.serial_packet_out,1)
         #MUST SET BAUDRATE ON DEVICE THROUGH TERMINAL,THIS NUMBER IS IGNORED
         self.ser = serial.Serial('/dev/ttyACM0',115200,timeout = None) #open serial port assigned to teensy, this can change between ACMO and ACM1, set baudrate to 115200 even though teensy ignores it. timeout set to none so the port waits forever until the requested number of bytes are recieved
-        time.sleep(2) #sleep program for 2 seconds to give teensy time to reload/start sending data stream
+        #time.sleep(1) #sleep program for 2 seconds to give teensy time to reload/start sending data stream
 
     def publish_serial(self, first): #method used to publish serial data
         msg = EncoderCounts() #assign the encoder counts class import to msg variable
