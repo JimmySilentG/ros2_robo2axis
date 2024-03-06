@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -59,18 +61,18 @@ class DutyCycle(metaclass=Metaclass_DutyCycle):
     ]
 
     _fields_and_field_types = {
-        'dcpercent': 'int8',
+        'dcpercent': 'float',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.dcpercent = kwargs.get('dcpercent', int())
+        self.dcpercent = kwargs.get('dcpercent', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -119,8 +121,8 @@ class DutyCycle(metaclass=Metaclass_DutyCycle):
     def dcpercent(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'dcpercent' field must be of type 'int'"
-            assert value >= -128 and value < 128, \
-                "The 'dcpercent' field must be an integer in [-128, 127]"
+                isinstance(value, float), \
+                "The 'dcpercent' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'dcpercent' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._dcpercent = value
